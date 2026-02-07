@@ -91,7 +91,7 @@ def get_random_problem(difficulty="MEDIUM"):
 
 
 @bot.command()
-async def daily(ctx, difficulty: str = "medium"):
+async def daily(ctx, difficulty: str = "hard"):
     """Send a random LeetCode problem with optional difficulty"""
     difficulty = difficulty.lower()
     if difficulty not in ["easy", "medium", "hard"]:
